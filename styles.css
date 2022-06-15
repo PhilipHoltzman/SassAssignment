@@ -1,33 +1,68 @@
-.sidenav {
+html, body {
     height: 100%;
+}
+
+
+body{
+   display: flex;
+}
+
+
+div {
+    display: block;
+    border: 1px solid black
+}
+
+.main-content{
+    display: flex;
+    flex-basis: 80%;
+    flex-direction: column;
+
+}
+
+.sidebar {
     height: 100%;
-    width: 256px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(139, 184, 218);
-    overflow-x: hidden;
-    padding-top: 20px;
+    flex-basis: 256px;
+}
+
+.search-bar{
+    flex-basis: 60px;
+    color: blue;
+}
+
+.content-container{
+    flex: 1;
+    display: flex;
+    
     
 }
 
-.sidenav:hover{
-    height: 100%;
-
-    
+.dashboard{
+    flex: 1;
+    display: flex;
 }
 
-.sidenavTitle{
-    width: 100%;
-    padding-bottom: 20px;
-    border-bottom: 5px solid red;
-    font-family: "Open Sans", Times, serif;
-  
+.left-side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
 }
 
+.right-side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
 
+.graph-card{
+    margin: 4px;
+}
 
+.circle-graph-card{
+    margin: 4px;
+}
 
 /*
 
