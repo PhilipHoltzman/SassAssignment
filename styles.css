@@ -12,11 +12,24 @@ body {
 body {
   display: flex;
   background-color: #e5e5e5;
+  
 }
 
 div {
   display: block;
+  
 }
+
+p{
+    font-size: 11px;
+    color: #90A0B7;
+}
+
+.dash-size{
+    font-size: 13px;
+    padding: 5px;
+}
+
 
 .blue-highlight {
   color: #109cf1;
@@ -43,6 +56,14 @@ div {
   max-width: 46px;
   max-height: 46px;
   border-radius: 50%;
+  
+}
+
+.name-and-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
 }
 
 .sidebar1 {
@@ -58,7 +79,7 @@ div {
   flex: 0.2;
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 5%;
 }
 .sidebar2-content {
   justify-content: center;
@@ -77,6 +98,7 @@ div {
 .side-bar-list {
   list-style: none;
   padding-bottom: 5%;
+  
 }
 
 .sidebar3 {
@@ -263,7 +285,7 @@ div {
 .deals-title {
   justify-content: space-between;
   align-items: center;
-  color: blueviolet;
+  color: #192A3E;
   flex: 1;
   display: flex;
 }
@@ -328,35 +350,52 @@ div {
 
 /*---------CSS Shapes------------*/
 
-.dot {
+.dot-red {
   height: 8px;
   width: 8px;
-  background-color: #F7685B;
+  background-color: #f7685b;
   border-radius: 50%;
   display: inline-block;
   position: relative;
   right: 7px;
 }
+.dot-blue {
+  height: 24px;
+  width: 24px;
+  background-color: #109CF1;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  top: 48px;
+  z-index: 0;
 
-.progress-bar{
-    height: 4px;
-    max-width: 587px;
-    background-color: #EBEFF2;
-    display: inline-block;
+}
+
+.z-hack{
+    z-index: 2;
+}
+
+
+.progress-bar {
+  height: 4px;
+  max-width: 587px;
+  background-color: #ebeff2;
+  display: inline-block;
 }
 
 #progressbar {
-    background-color: #EBEFF2;
-    
-    /* (height of inner div) / 2 + padding */
-    padding: 1px;
-    border-radius: 2px;
-  }
+  background-color: #ebeff2;
 
-  #progressbar>div {
-    background-color: #2ED47A;
-    width: 80%;
-    /* Adjust with JavaScript */
-    height: 4px;
-    border-radius: 2px;
-  }
+  /* (height of inner div) / 2 + padding */
+  padding: 1px;
+  border-radius: 2px;
+}
+
+#progressbar > div {
+  background-color: #2ed47a;
+  width: 80%;
+  /* Adjust with JavaScript */
+  height: 4px;
+  border-radius: 2px;
+}
