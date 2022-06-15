@@ -40,6 +40,7 @@
           <li class="deals-icon">Deals</li>
         </ul>
       </div>
+
       <div class="sidebar3">
         <h5 class="settings-icon">Settings</h5>
         <h6>Toggle Sidebar</h6>
@@ -49,11 +50,15 @@
       <div class="search-bar">
         <div class="search">
           <img src="/images/search_icon.svg" alt="searchicon" />
-          <input class="text-input-field" type="text" placeholder="Global search">
+          <input
+            class="text-input-field"
+            type="text"
+            placeholder="Global search"
+          />
         </div>
 
         <div class="alert-section">
-          <img src="/images/bell_icon.svg" alt="" />
+          <img src="/images/bell_icon.svg" alt="" /><span class="dot"></span>
         </div>
       </div>
       <div class="content-container">
@@ -64,7 +69,10 @@
               <h6>8 tasks completed out of 10</h6>
               <h6>show this week</h6>
             </div>
-            <div class="green-bar">green bar</div>
+            <div id="progressbar">
+              <div></div>
+            </div>
+
             <div class="todays-date">23 December, Sunday</div>
             <div class="calendar">
               <ul class="calendar-list-ul">
@@ -132,7 +140,7 @@
               <h5>closed deals</h5>
             </div>
             <div class="graph-image">
-              <img src="/images/graph.svg" alt="graph" />
+              <img class="image-resize" src="/images/graph.svg" alt="graph" />
             </div>
           </div>
           <div class="circle-graph-card">

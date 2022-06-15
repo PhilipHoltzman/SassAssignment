@@ -16,11 +16,10 @@ body {
 
 div {
   display: block;
-  
 }
 
-.blue-highlight{
-    color: #109CF1
+.blue-highlight {
+  color: #109cf1;
 }
 
 .main-content {
@@ -52,8 +51,8 @@ div {
   font-family: "Open Sans";
   align-items: center;
   padding-left: 10%;
-  color: #109CF1;
-  border-bottom: 1px solid #EBEFF2;
+  color: #109cf1;
+  border-bottom: 1px solid #ebeff2;
 }
 .sidebar2 {
   flex: 0.2;
@@ -72,7 +71,7 @@ div {
   align-items: center;
   justify-content: center;
   display: flex;
-  border-bottom: 1px solid #EBEFF2;
+  border-bottom: 1px solid #ebeff2;
 }
 
 .side-bar-list {
@@ -108,7 +107,7 @@ div {
 }
 
 .settings-icon {
-    list-style-image: url("/images/dotdotdot_icon.svg");
+  list-style-image: url("/images/dotdotdot_icon.svg");
 }
 
 /*--------------------*/
@@ -123,22 +122,22 @@ div {
   background-color: white;
 }
 
-.search{
-    display: flex;
-    flex: 1;
-    padding-left: 2%;
+.search {
+  display: flex;
+  flex: 1;
+  padding-left: 2%;
 }
 
-.text-input-field{
-    outline: white;
-    border: none;
+.text-input-field {
+  outline: white;
+  border: none;
 }
 
-.alert-section{
-    display: flex;
-    flex: .1;
-    justify-content: end;
-    padding-right: 3%;
+.alert-section {
+  display: flex;
+  flex: 0.1;
+  justify-content: end;
+  padding-right: 3%;
 }
 
 /*-----------------------*/
@@ -164,7 +163,6 @@ div {
   background-color: white;
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
-  
 }
 
 .dashboard {
@@ -284,6 +282,11 @@ div {
 
 /* ------------------------*/
 
+.image-resize {
+  max-width: 400px;
+  max-height: 225px;
+}
+
 /* ----CIRCLE GRAPH--------*/
 
 .circle-graph-card {
@@ -323,25 +326,37 @@ div {
   align-items: center;
 }
 
-/*-----------------------------*/
-/*
+/*---------CSS Shapes------------*/
 
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #F7685B;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: 7px;
+}
 
+.progress-bar{
+    height: 4px;
+    max-width: 587px;
+    background-color: #EBEFF2;
+    display: inline-block;
+}
 
-light blue / highlighted text
+#progressbar {
+    background-color: #EBEFF2;
+    
+    /* (height of inner div) / 2 + padding */
+    padding: 1px;
+    border-radius: 2px;
+  }
 
-#109CF1
-
-font Open Sans title
-
-font poppins for everything else
-
-#334D6E
-
-greens for bars
-#2ED47A
-
-
-
-
-*/
+  #progressbar>div {
+    background-color: #2ED47A;
+    width: 80%;
+    /* Adjust with JavaScript */
+    height: 4px;
+    border-radius: 2px;
+  }
