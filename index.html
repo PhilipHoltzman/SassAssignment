@@ -19,7 +19,7 @@
       <div class="sidebar1">SaaS Kit</div>
       <div class="sidebar2">
         <div class="sidebar2-content">
-          <div class="profilepic"><img src="/images/profile.svg" alt="" /></div>
+          <div class="profilepic"><img class="sidebar-profile-pic" src="/images/profile.svg" alt="" /></div>
           <div class="name-and-email">
             <h5>Sierra Ferguson</h5>
             <p>s.ferguson@gmail.com</p>
@@ -27,13 +27,13 @@
         </div>
       </div>
       <div class="sidebar-menu-items">
-        <ul>
-          <li>Dashboard</li>
-          <li>Tasks</li>
-          <li>Email</li>
-          <li>Contacts</li>
-          <li>Chat</li>
-          <li>Deals</li>
+        <ul class="side-bar-list">
+          <li class="dashboard-icon">Dashboard</li>
+          <li class="task-icon">Tasks</li>
+          <li class="email-icon">Email</li>
+          <li class="contacts-icon">Contacts</li>
+          <li class="chats-icon">Chat</li>
+          <li class="deals-icon">Deals</li>
         </ul>
       </div>
       <div class="sidebar3">
@@ -47,9 +47,51 @@
         <h6>icon</h6>
       </div>
       <div class="content-container">
+        <!--    LEFT SIDE  -->
         <div class="left-side">
-          <div class="dashboard">info</div>
+          <div class="left-side-top">
+            <div class="left-side-top-title">
+              <h6>8 tasks completed out of 10</h6>
+              <h6>show this week</h6>
+            </div>
+            <div class="green-bar">green bar</div>
+            <div class="todays-date">23 December, Sunday</div>
+            <div class="calendar">
+                <ul class="calendar-list-ul">
+                  <li class="calendar-list-li"><p>Sun</p><p>23</p></li>
+                  <li class="calendar-list-li"><p>Mon</p><p>24</p></li>
+                  <li class="calendar-list-li"><p>Tue</p><p>25</p></li>
+                  <li class="calendar-list-li"><p>Wed</p><p>26</p></li>
+                  <li class="calendar-list-li"><p>Thu</p><p>27</p></li>
+                  <li class="calendar-list-li"><p>Fri</p><p>28</p></li>
+                  <li class="calendar-list-li"><p>Sat</p><p>29</p></li>
+                </ul>
+            </div>
+          </div>
+          <div class="left-side-bottom">
+            <div class="task-card">
+              <div class="task-card-interior">
+                <div class="card-left">
+                  <h4>Blah Blah Blah</h4>
+                  <h5>due dates badfbdfb</h5>
+                  <img class="author-pic" src="/images/profile.svg" alt="">
+                
+                </div>
+                <div class="card-right"></div>
+              </div>
+            </div>
+            <div class="task-card">
+              <div class="task-card-interior">task2</div>
+            </div>
+            <div class="task-card">
+              <div class="task-card-interior">task3</div>
+            </div>
+          </div>
+          <div class="show-more">
+            <h5>Show More</h5>
+          </div>
         </div>
+        <!--    RIGHT SIDE  -->
         <div class="right-side">
           <div class="graph-card">
             <div class="deals-title">
@@ -60,7 +102,7 @@
               <h5>closed deals</h5>
             </div>
             <div class="graph-image">
-              <img src="/images/graph.svg" alt="graph">
+              <img src="/images/graph.svg" alt="graph" />
             </div>
           </div>
           <div class="circle-graph-card">
@@ -70,7 +112,7 @@
             </div>
             <div class="circle-graph-lower-component">
               <div class="circle-graph-image">
-                <img src="/images/60percentCircle.svg" alt="circle graph">
+                <img src="/images/60percentCircle.svg" alt="circle graph" />
                 <div class="circle-graph-list">
                   <ul>
                     <li>Active</li>
@@ -80,9 +122,7 @@
                 </div>
               </div>
             </div>
-            
           </div>
-
         </div>
       </div>
     </div>

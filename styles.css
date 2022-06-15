@@ -10,6 +10,7 @@ body {
 
 body {
   display: flex;
+  background-color: #e5e5e5;
 }
 
 div {
@@ -30,6 +31,13 @@ div {
   flex-basis: 256px;
   display: flex;
   flex-direction: column;
+  background-color: white;
+}
+
+.sidebar-profile-pic {
+  max-width: 46px;
+  max-height: 46px;
+  border-radius: 50%;
 }
 
 .sidebar1 {
@@ -40,11 +48,11 @@ div {
   display: flex;
   justify-content: center;
 }
-.sidebar2-content{
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    display: flex;
+.sidebar2-content {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
 }
 
 .sidebar-menu-items {
@@ -53,11 +61,34 @@ div {
   display: flex;
 }
 
+.side-bar-list {
+  list-style: none;
+}
+
 .sidebar3 {
   flex: 1.2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.dashboard-icon {
+  list-style-image: url("/images/dashboard_icon.svg");
+}
+.task-icon {
+  list-style-image: url("/images/tasks_icon.svg");
+}
+.email-icon {
+  list-style-image: url("/images/email_icon.svg");
+}
+.contacts-icon {
+  list-style-image: url("/images/contacts_icon.svg");
+}
+.chats-icon {
+  list-style-image: url("/images/chat_icon.svg");
+}
+.deals-icon {
+  list-style-image: url("/images/deals_icon.svg");
 }
 
 /*--------------------*/
@@ -70,6 +101,7 @@ div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 /*-----------------------*/
@@ -84,12 +116,91 @@ div {
   display: flex;
 }
 
+/*    LEFT SIDE       */
+
 .left-side {
   flex: 1;
   display: flex;
   flex-direction: column;
   margin: 24px;
+  margin-right: 0px;
+  background-color: white;
 }
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side-top {
+  flex-direction: column;
+  display: flex;
+  flex: 0.4;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-list-ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  align-items: center;
+}
+
+.calendar-list-li {
+  color: brown;
+  display: inline;
+}
+
+.left-side-bottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.task-card {
+  display: flex;
+  flex: 1;
+}
+
+.task-card-interior {
+  display: flex;
+  flex: 1;
+  margin: 4%;
+}
+
+.author-pic {
+  max-width: 24px;
+  max-height: 24px;
+  border-radius: 50%;
+}
+
+.card-left {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.card-right {
+  display: flex;
+  flex: 1;
+}
+
+.show-more {
+  display: flex;
+  justify-content: center;
+}
+
+/* RIGHT SIDE  */
 
 .right-side {
   flex: 1;
@@ -104,26 +215,27 @@ div {
   margin-bottom: 10px;
   flex: 1;
   display: flex;
-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
 }
-.deals-title{
-    justify-content: space-between;
-    align-items: center;
-    color: blueviolet;
-    flex: 1;
-    display: flex;
+.deals-title {
+  justify-content: space-between;
+  align-items: center;
+  color: blueviolet;
+  flex: 1;
+  display: flex;
 }
-.closed-deals{
-    flex: 1;
-    display: flex;
-    align-items: center;
+.closed-deals {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
-.graph-image{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.graph-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------------------*/
@@ -135,33 +247,33 @@ flex-direction: column;
   flex: 1px;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
-.tasks-title-graph{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: .4;
+.tasks-title-graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.4;
 }
 
-.circle-graph-lower-component{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+.circle-graph-lower-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.circle-graph-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+.circle-graph-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
-.circle-graph-list{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.circle-graph-list {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*-----------------------------*/
