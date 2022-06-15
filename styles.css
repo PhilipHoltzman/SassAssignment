@@ -1,67 +1,111 @@
-html, body {
-    height: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
 }
 
-
-body{
-   display: flex;
+body {
+  display: flex;
 }
-
 
 div {
-    display: block;
-    border: 1px solid black
+  display: block;
+  border: 1px solid black;
 }
 
-.main-content{
-    display: flex;
-    flex-basis: 80%;
-    flex-direction: column;
-
+.main-content {
+  display: flex;
+  flex-basis: 80%;
+  flex-direction: column;
 }
+
+/*  SIDE BAR   */
 
 .sidebar {
-    height: 100%;
-    flex-basis: 256px;
+  height: 100%;
+  flex-basis: 256px;
+  display: flex;
+  flex-direction: column;
 }
 
-.search-bar{
-    flex-basis: 60px;
-    color: blue;
+.sidebar1 {
+  flex-basis: 60px;
 }
-
-.content-container{
-    flex: 1;
+.sidebar2 {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+}
+.sidebar2-content{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     display: flex;
-    
-    
 }
 
-.dashboard{
-    flex: 1;
-    display: flex;
+.sidebar-menu-items {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.left-side{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 12px;
+.sidebar3 {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.right-side{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 12px;
+/*--------------------*/
+
+/*--SEARCH BAR ------ */
+
+.search-bar {
+  flex-basis: 60px;
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.graph-card{
-    margin: 4px;
+/*-----------------------*/
+
+.content-container {
+  flex: 1;
+  display: flex;
 }
 
-.circle-graph-card{
-    margin: 4px;
+.dashboard {
+  flex: 1;
+  display: flex;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
+.graph-card {
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.circle-graph-card {
+  margin-top: 10px;
+  flex: 1px;
 }
 
 /*
