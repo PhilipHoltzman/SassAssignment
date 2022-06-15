@@ -98,16 +98,73 @@ div {
   margin: 24px;
 }
 
+/* GRAPH CARD */
+
 .graph-card {
   margin-bottom: 10px;
   flex: 1;
+  display: flex;
+flex-direction: column;
 }
+.deals-title{
+    justify-content: space-between;
+    align-items: center;
+    color: blueviolet;
+    flex: 1;
+    display: flex;
+}
+.closed-deals{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.graph-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------*/
+
+/* ----CIRCLE GRAPH--------*/
 
 .circle-graph-card {
   margin-top: 10px;
   flex: 1px;
+  display: flex;
+  flex-direction: column;
 }
 
+.tasks-title-graph{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: .4;
+}
+
+.circle-graph-lower-component{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.circle-graph-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.circle-graph-list{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------*/
 /*
 
 
