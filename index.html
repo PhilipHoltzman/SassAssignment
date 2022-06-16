@@ -22,7 +22,11 @@
       <div class="sidebar2">
         <div class="sidebar2-content">
           <div class="profilepic">
-            <img class="sidebar-profile-pic" src="/images/profile.svg" alt="profile" />
+            <img
+              class="sidebar-profile-pic"
+              src="/images/profile.svg"
+              alt="profile"
+            />
           </div>
           <div class="name-and-email">
             <h5>Sierra Ferguson</h5>
@@ -50,6 +54,9 @@
       <div class="search-bar">
         <div class="search">
           <img src="/images/search_icon.svg" alt="searchicon" />
+          <div class="divider"></div>
+          <div class="divider"></div>
+          <div class="divider"></div>
           <input
             class="text-input-field"
             type="text"
@@ -58,7 +65,7 @@
         </div>
 
         <div class="alert-section">
-          <img src="/images/bell_icon.svg" alt="" /><span
+          <img class="clickable" src="/images/bell_icon.svg" alt="" /><span
             class="dot-red"
           ></span>
         </div>
@@ -69,7 +76,13 @@
           <div class="left-side-top">
             <div class="left-side-top-title">
               <h6>8 tasks completed out of 10</h6>
-              <h6>show this week</h6>
+              <div class="show-this-time">
+                <p>Show:</p>
+                <p class="blue-highlight clickable">This week</p>
+                <p>
+                  <img src="/images/Polygon.svg" alt="" />
+                </p>
+              </div>
             </div>
             <div id="progressbar">
               <div></div>
@@ -77,18 +90,14 @@
 
             <div class="todays-date">23 December, Sunday</div>
             <div class="calendar">
-              <span
-                  class="dot-blue"
-                ></span>
               <ul class="calendar-list-ul">
-                
                 <li class="calendar-list-li">
                   <p>Sun</p>
                   <p class="z-hack">23</p>
                 </li>
                 <li class="blue-highlight calendar-list-li">
-                  <p>Mon</p>
-                  <p>24</p>
+                  <p class="blue-highlight">Mon</p>
+                  <p class="blue-highlight">24</p>
                 </li>
                 <li class="calendar-list-li">
                   <p>Tue</p>
@@ -110,9 +119,7 @@
                   <p>Sat</p>
                   <p>29</p>
                 </li>
-                
               </ul>
-              
             </div>
           </div>
           <div class="left-side-bottom">
@@ -142,7 +149,14 @@
           <div class="graph-card">
             <div class="deals-title">
               <h5>Deals</h5>
-              <h6>Show: Monthly</h6>
+              <div class="show-this-time">
+                <p>Show:</p>
+                <div class="divider"></div>
+                <p class="blue-highlight clickable">Monthly</p>
+                <p>
+                  <img src="/images/Polygon.svg" alt="" />
+                </p>
+              </div>
             </div>
             <div class="closed-deals">
               <h5>closed deals</h5>
@@ -154,7 +168,14 @@
           <div class="circle-graph-card">
             <div class="tasks-title-graph">
               <h5>Tasks</h5>
-              <h6>Show: This month</h6>
+              <div class="show-this-time">
+                <p>Show:</p>
+                <div class="divider"></div>
+                <p class="blue-highlight clickable">This Month</p>
+                <p>
+                  <img src="/images/Polygon.svg" alt="" />
+                </p>
+              </div>
             </div>
             <div class="circle-graph-lower-component">
               <div class="circle-graph-image">
@@ -176,3 +197,6 @@
 </html>
 
 <!-- ON HOVER OF THE DIVS OR WHATEVER MAKE SURE THAT THE CURSOR LOOKS CLICKABLE AND THE ITEMS IN LOWER RIGHT  CORNER APPEAR-->
+<!-----         PSEUDO ELEMENT BEFORE TO ADD ICONS IN A SMARTER WAY-->
+
+<!--- refer to the presesntation on pseudo element presentation for code-->

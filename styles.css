@@ -12,24 +12,21 @@ body {
 body {
   display: flex;
   background-color: #e5e5e5;
-  
 }
 
 div {
   display: block;
-  
 }
 
-p{
-    font-size: 11px;
-    color: #90A0B7;
+p {
+  font-size: 11px;
+  color: #90a0b7;
 }
 
-.dash-size{
-    font-size: 13px;
-    padding: 5px;
+.dash-size {
+  font-size: 13px;
+  padding: 5px;
 }
-
 
 .blue-highlight {
   color: #109cf1;
@@ -56,14 +53,13 @@ p{
   max-width: 46px;
   max-height: 46px;
   border-radius: 50%;
-  
 }
 
-.name-and-email{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-left: 20px;
+.name-and-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 20px;
 }
 
 .sidebar1 {
@@ -98,7 +94,6 @@ p{
 .side-bar-list {
   list-style: none;
   padding-bottom: 5%;
-  
 }
 
 .sidebar3 {
@@ -132,6 +127,10 @@ p{
   list-style-image: url("/images/dotdotdot_icon.svg");
 }
 
+.triangle-icon {
+  list-style-image: url("/images/Polygon.svg");
+}
+
 /*--------------------*/
 
 /*--SEARCH BAR ------ */
@@ -142,6 +141,7 @@ p{
   justify-content: flex-start;
   align-items: center;
   background-color: white;
+  
 }
 
 .search {
@@ -187,6 +187,14 @@ p{
   border-radius: 4px;
 }
 
+.left-side-top-title {
+  display: flex;
+  flex: 0.3;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
 .dashboard {
   display: flex;
   flex-direction: column;
@@ -199,14 +207,29 @@ p{
   padding: 4%;
 }
 
+.show-this-time {
+  display: flex;
+  flex: 0.3;
+  font-size: 12px;
+  justify-content: end;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
 .calendar {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
 }
 
 .calendar-bottom {
   display: flex;
   justify-content: center;
+  flex: 1;
+  align-items: flex-end;
 }
 
 .calendar-list-ul {
@@ -218,6 +241,10 @@ p{
 
 .calendar-list-li {
   display: inline;
+}
+
+li p:hover{
+  color: #109cf1;
 }
 
 .left-side-bottom {
@@ -285,9 +312,13 @@ p{
 .deals-title {
   justify-content: space-between;
   align-items: center;
-  color: #192A3E;
+  color: #192a3e;
   flex: 1;
   display: flex;
+  border-bottom: 1px solid #ebeff2;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-style: normal;
 }
 .closed-deals {
   flex: 1;
@@ -327,6 +358,13 @@ p{
   align-items: center;
   justify-content: space-between;
   flex: 0.4;
+  border-bottom: 1px solid #ebeff2;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.grey-border {
+  width: 100%;
 }
 
 .circle-graph-lower-component {
@@ -362,20 +400,18 @@ p{
 .dot-blue {
   height: 24px;
   width: 24px;
-  background-color: #109CF1;
+  background-color: #109cf1;
   border-radius: 50%;
   display: inline-block;
   position: relative;
   left: 10px;
   top: 48px;
   z-index: 0;
-
 }
 
-.z-hack{
-    z-index: 2;
+.z-hack {
+  z-index: 2;
 }
-
 
 .progress-bar {
   height: 4px;
@@ -398,4 +434,10 @@ p{
   /* Adjust with JavaScript */
   height: 4px;
   border-radius: 2px;
+}
+
+.divider {
+  width: 5px;
+  height: auto;
+  display: inline-block;
 }
