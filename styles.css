@@ -141,7 +141,6 @@ p {
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-  
 }
 
 .search {
@@ -185,6 +184,8 @@ p {
   background-color: white;
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .left-side-top-title {
@@ -243,7 +244,7 @@ p {
   display: inline;
 }
 
-li p:hover{
+li p:hover {
   color: #109cf1;
 }
 
@@ -254,6 +255,10 @@ li p:hover{
 }
 
 .task-card {
+  display: flex;
+  flex: 1;
+}
+.task-card:hover .card-layer-3-right {
   display: flex;
   flex: 1;
 }
@@ -279,7 +284,7 @@ li p:hover{
   padding-bottom: 5px;
   flex-direction: row;
   display: flex;
-  flex: .6;
+  flex: 0.6;
   justify-content: space-between;
 }
 .card-layer-2 {
@@ -288,7 +293,7 @@ li p:hover{
   padding-bottom: 5px;
   flex-direction: row;
   display: flex;
-  flex: .6;
+  flex: 0.6;
   align-items: center;
   justify-content: space-between;
 }
@@ -306,7 +311,6 @@ li p:hover{
   display: flex;
   flex: 1;
   align-items: center;
-  
 }
 .card-layer-3-right {
   flex-direction: row;
@@ -316,19 +320,22 @@ li p:hover{
   align-items: center;
 }
 
-.completed-button{
+.completed-button {
   background-color: #2ed47a;
   border: none;
   color: white;
   border-radius: 4px;
   padding: 5px 12px 5px 12px;
 }
-.ended-button{
-
+.ended-button {
+  background-color: #f7685b;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 12px 5px 12px;
 }
 
-
-/*  RIGHT CARD*/ 
+/*  RIGHT CARD*/
 
 .card-right {
   display: flex;
@@ -436,6 +443,10 @@ li p:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.circle-graph-list-items {
+  list-style-type: none;
 }
 
 /*---------CSS Shapes------------*/
