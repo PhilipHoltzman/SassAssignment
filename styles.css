@@ -16,7 +16,6 @@ body {
 
 div {
   display: flex;
-  /* border: 1px solid black; */
 }
 
 p {
@@ -47,6 +46,12 @@ p {
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
 }
 
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 .sidebar-profile-pic {
   max-width: 46px;
   max-height: 46px;
@@ -67,6 +72,8 @@ p {
   align-items: center;
   color: #109cf1;
   border-bottom: 1px solid #ebeff2;
+  padding: 8px;
+  padding-left: 20px;
 }
 .sidebar2 {
   flex: 0.2;
@@ -83,8 +90,8 @@ p {
 
 .sidebar-menu-items {
   align-items: center;
-  padding-left: 10px;
-  justify-content: center;
+
+  padding-left: 25px;
   display: flex;
   border-bottom: 1px solid #ebeff2;
 }
@@ -99,11 +106,9 @@ p {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  justify-content:space-between;
-  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
 }
-
-
 
 .li-container {
   display: flex;
@@ -118,51 +123,55 @@ p {
   flex: 1;
 }
 
+.li-subcontainer:hover p {
+  color: #109cf1;
+}
+
 .dashboard-icon::before {
-  content: url("/images/dashboard_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
-  right: 10px;
+  content: url("/images/dashboard_icon.svg");
+  position: relative;
+  right: 15px;
   bottom: 1px;
 }
 .tasks-icon::before {
-  content: url("/images/tasks_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
-  right: 10px;
+  content: url("/images/tasks_icon.svg");
+  position: relative;
+  right: 15px;
   bottom: 1px;
 }
 .email-icon::before {
-  content: url("/images/email_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
-  right: 10px;
+  content: url("/images/email_icon.svg");
+  position: relative;
+  right: 15px;
   bottom: 1px;
 }
 .contacts-icon::before {
-  content: url("/images/contacts_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
-  right: 10px;
+  content: url("/images/contacts_icon.svg");
+  position: relative;
+  right: 15px;
   bottom: 1px;
 }
 .chat-icon::before {
-  content: url("/images/chat_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
-  right: 10px;
+  content: url("/images/chat_icon.svg");
+  position: relative;
+  right: 15px;
   bottom: 1px;
 }
 .deals-icon::before {
-  content: url("/images/deals_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
-  right: 10px;
+  content: url("/images/deals_icon.svg");
+  position: relative;
+  right: 15px;
   bottom: 1px;
 }
 .settings-icon::before {
-  content: url("/images/dotdotdot_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
-  right: 10px;
-  bottom: 5px;
+  content: url("/images/dotdotdot_icon.svg");
+  position: relative;
+  right: 5px;
+  bottom: 7px;
 }
 .toggle-icon::before {
-  content: url("/images/toggle_icon.svg"); /* with class ModalCarrot ??*/
-  position: relative; /*or absolute*/
+  content: url("/images/toggle_icon.svg");
+  position: relative;
   right: 10px;
   bottom: 1px;
 }
@@ -178,8 +187,18 @@ p {
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-  padding-bottom: 10px;
-  padding-top: 10px;
+}
+
+@media (max-width: 735px) {
+  .search-bar {
+    flex-basis: 30px;
+    display: flex;
+    flex: .1;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 25px;
+  }
 }
 
 .search {
@@ -233,6 +252,7 @@ p {
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
+  padding-bottom: 8px;
 }
 
 .dashboard {
@@ -244,7 +264,7 @@ p {
   flex-direction: column;
   display: flex;
   flex: 0.4;
-  padding: 10px;
+  padding: 15px;
 }
 
 .show-this-time {
@@ -252,6 +272,7 @@ p {
   flex: 0.3;
   font-size: 12px;
   justify-content: end;
+  padding: 2px;
 }
 
 .clickable {
@@ -272,6 +293,10 @@ p {
   align-items: flex-end;
 }
 
+.todays-date {
+  padding-top: 10px;
+}
+
 .calendar-list-ul {
   display: flex;
   justify-content: space-around;
@@ -283,11 +308,9 @@ p {
   display: inline;
 }
 
-.calendar-list-li:hover p{
+.calendar-list-li:hover p {
   color: #109cf1;
-
 }
-
 
 .left-side-bottom {
   display: flex;
@@ -397,6 +420,12 @@ p {
   margin: 24px;
 }
 
+@media (max-width: 740px) {
+  .right-side {
+    display: none;
+  }
+}
+
 /* GRAPH CARD */
 
 .graph-card {
@@ -416,10 +445,10 @@ p {
   flex: 1;
   display: flex;
   border-bottom: 1px solid #ebeff2;
-  padding-bottom: 8px;
   margin-bottom: 20px;
   font-style: normal;
   padding-bottom: 15px;
+  padding: 10px;
 }
 .closed-deals {
   flex: 1;
@@ -428,7 +457,7 @@ p {
 
   align-items: center;
   padding-bottom: 15px;
-  padding-left: 10px;
+  padding-left: 22px;
 }
 
 .graph-image {
@@ -465,7 +494,8 @@ p {
   flex: 0.4;
   border-bottom: 1px solid #ebeff2;
   padding-bottom: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  padding: 10px;
 }
 
 .grey-border {
@@ -482,6 +512,8 @@ p {
   justify-content: center;
   align-items: center;
   flex: 1;
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 .circle-graph-list {
@@ -643,6 +675,12 @@ p {
   width: 100%;
 }
 
-.font-wt{
+.font-wt {
   font-weight: 400;
+}
+
+.line-1 {
+  height: 1px;
+  width: 100%;
+  background: #e5e5e5;
 }
