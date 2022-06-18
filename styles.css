@@ -15,7 +15,8 @@ body {
 }
 
 div {
-  display: block;
+  display: flex;
+  /* border: 1px solid black; */
 }
 
 p {
@@ -26,10 +27,6 @@ p {
 .dash-size {
   font-size: 13px;
   padding: 5px;
-}
-
-.blue-highlight {
-  color: #109cf1;
 }
 
 .main-content {
@@ -86,6 +83,7 @@ p {
 
 .sidebar-menu-items {
   align-items: center;
+  padding-left: 10px;
   justify-content: center;
   display: flex;
   border-bottom: 1px solid #ebeff2;
@@ -101,7 +99,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5%;
+  padding: 10px;
 }
 
 .dashboard-icon {
@@ -131,6 +129,68 @@ p {
   list-style-image: url("/images/Polygon.svg");
 }
 
+.li-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.li-subcontainer {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-icon::before {
+  content: url("/images/dashboard_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+.tasks-icon::before {
+  content: url("/images/tasks_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+.email-icon::before {
+  content: url("/images/email_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+.contacts-icon::before {
+  content: url("/images/contacts_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+.chat-icon::before {
+  content: url("/images/chat_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+.deals-icon::before {
+  content: url("/images/deals_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+.settings-icon::before {
+  content: url("/images/dotdotdot_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+.toggle-icon::before {
+  content: url("/images/toggle_icon.svg"); /* with class ModalCarrot ??*/
+  position: relative; /*or absolute*/
+  right: 10px;
+  bottom: 1px;
+}
+
 /*--------------------*/
 
 /*--SEARCH BAR ------ */
@@ -138,9 +198,12 @@ p {
 .search-bar {
   flex-basis: 60px;
   display: flex;
+  flex: 1;
   justify-content: flex-start;
   align-items: center;
   background-color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .search {
@@ -295,7 +358,6 @@ li p:hover {
   display: flex;
   flex: 0.6;
   align-items: center;
-  justify-content: space-between;
 }
 .card-layer-3 {
   padding-left: 15px;
@@ -378,11 +440,16 @@ li p:hover {
   padding-bottom: 8px;
   margin-bottom: 20px;
   font-style: normal;
+  padding-bottom: 15px;
 }
 .closed-deals {
   flex: 1;
   display: flex;
+  flex-direction: row;
+
   align-items: center;
+  padding-bottom: 15px;
+  padding-left: 10px;
 }
 
 .graph-image {
@@ -472,6 +539,66 @@ li p:hover {
   z-index: 0;
 }
 
+.empty-dot-yellow {
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: 7px;
+  border: 2px solid #ffb946;
+}
+.empty-dot-green {
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: 7px;
+  border: 2px solid #2ed47a;
+}
+.empty-dot-red {
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: 7px;
+  border: 2px solid #f7685b;
+}
+.empty-dot-blue {
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: 7px;
+  border: 2px solid #109cf1;
+}
+
+.yellow-dot-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+.green-dot-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+.red-dot-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
 .z-hack {
   z-index: 2;
 }
@@ -503,4 +630,32 @@ li p:hover {
   width: 5px;
   height: auto;
   display: inline-block;
+}
+
+.blue-highlight {
+  color: #109cf1;
+}
+
+.blacked {
+  color: #192a3e;
+}
+
+.dark-greyed {
+  color: #4c5862;
+}
+
+.pencil {
+  visibility: hidden;
+}
+
+.trash {
+  visibility: hidden;
+}
+
+.task-card-interior:hover .pencil {
+  visibility: visible;
+}
+
+.task-card-interior:hover .trash {
+  visibility: visible;
 }
